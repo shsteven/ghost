@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM node:0.10-slim
+FROM node:4.4
 
 # Install Ghost
 RUN \
