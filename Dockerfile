@@ -5,7 +5,11 @@
 #
 
 # Pull base image.
-FROM node:4.4
+FROM node:4.4-slim
+
+# Install unzip
+RUN \
+  apt-get update && apt-get install unzip
 
 # Install Ghost
 RUN \
